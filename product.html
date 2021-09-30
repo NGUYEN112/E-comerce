@@ -31,31 +31,54 @@
     <header class="header">
         <div class="container header__inner">
             <div class="header__logo">
-                <a href="index.html"><img src="images/header/logo.png" alt=""></a>
+                <img src="images/header/logo.png" alt="">
             </div>
             <ul class="header-navbar">
                 <li class="header__search">
                     <input type="text" placeholder="Search...">
                     <button><i class="far fa-search"></i> Search</button>
                 </li>
-                <li class=" header__cart">
-                    <div class="header__cart-title">
-                        <i class="fas fa-shopping-cart fa-3x"></i>
-                        <h4>Your cart <span>(2 items)</span></h4>
+                <li class="header__cart-inner">
+                    <div class=" header__cart">
+                        <div class="header__cart-title">
+                            <i class="fas fa-shopping-cart fa-3x"></i>
+                            <h4>Your cart <span>(2 items)</span></h4>
 
+                        </div>
+                        <div class=" header__cart-info">
+                            <h3>$125.0</h3>
+                            <a href="#">checkout</a>
+                        </div>
                     </div>
-                    <div class=" header__cart-info">
-                        <h3>$125.0</h3>
-                        <a href="#">checkout</a>
+                    <div class=" header__wish-list">
+                        <img src="images/header/wish-list.png" alt="">
+                        <p>Wish list </p> <sup>20</sup>
                     </div>
                 </li>
-                <li class=" header__wish-list">
+                <!-- <li class=" header__wish-list">
                     <img src="images/header/wish-list.png" alt="">
                     <p>Wish list </p> <sup>20</sup>
+                </li> -->
+                <li class="navbar-mobie">
+                    <ul class="nav-mobie">
+                        <li class="cart">
+                            <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
+                        </li>
+                        <li class="wish">
+                            <p>Wish list </p> <sup>20</sup>
+                        </li>
+                    </ul>
                 </li>
-                
             </ul>
-            
+            <!-- <ul class="nav-mobie">
+                <li class="cart">
+                    <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
+                </li>
+                <li class="wish-list">
+                    <p>Wish list </p> <sup>20</sup>
+                </li>
+            </ul> -->
+
             <!-- bars -->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -68,7 +91,7 @@
                 </li>
                 <li class="nav-item  header__cart-info">
                     <h3>$125.0</h3>
-                        <a href="#">checkout</a>
+                    <a href="#">checkout</a>
                 </li>
                 <li class="nav-item header__wish-list">
                     <p>Wish list </p> <sup>20</sup>
@@ -84,8 +107,12 @@
 
 
     <nav class="navbar">
+        <div class="menu-btn">
+            <span class="fas fa-chevron-left"></span>
+        </div>
         <div class="container">
-            <ul class="navbar__list">
+            
+            <ul class="navbar__list  menubar">
                 <li class="navbar__item"><a href="#">Computers</a> </li>
                 <li class="navbar__item"><a href="#">Cooking</a> </li>
                 <li class="navbar__item"><a href="#">Education</a> </li>

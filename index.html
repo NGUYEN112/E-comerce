@@ -42,24 +42,47 @@
                     <input type="text" placeholder="Search...">
                     <button><i class="far fa-search"></i> Search</button>
                 </li>
-                <li class=" header__cart">
-                    <div class="header__cart-title">
-                        <i class="fas fa-shopping-cart fa-3x"></i>
-                        <h4>Your cart <span>(2 items)</span></h4>
+                <li class="header__cart-inner">
+                    <div class=" header__cart">
+                        <div class="header__cart-title">
+                            <i class="fas fa-shopping-cart fa-3x"></i>
+                            <h4>Your cart <span>(2 items)</span></h4>
 
+                        </div>
+                        <div class=" header__cart-info">
+                            <h3>$125.0</h3>
+                            <a href="#">checkout</a>
+                        </div>
                     </div>
-                    <div class=" header__cart-info">
-                        <h3>$125.0</h3>
-                        <a href="#">checkout</a>
+                    <div class=" header__wish-list">
+                        <img src="images/header/wish-list.png" alt="">
+                        <p>Wish list </p> <sup>20</sup>
                     </div>
                 </li>
-                <li class=" header__wish-list">
+                <!-- <li class=" header__wish-list">
                     <img src="images/header/wish-list.png" alt="">
                     <p>Wish list </p> <sup>20</sup>
+                </li> -->
+                <li class="navbar-mobie">
+                    <ul class="nav-mobie">
+                        <li class="cart">
+                            <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
+                        </li>
+                        <li class="wish">
+                            <p>Wish list </p> <sup>20</sup>
+                        </li>
+                    </ul>
                 </li>
-                
             </ul>
-            
+            <!-- <ul class="nav-mobie">
+                <li class="cart">
+                    <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
+                </li>
+                <li class="wish-list">
+                    <p>Wish list </p> <sup>20</sup>
+                </li>
+            </ul> -->
+
             <!-- bars -->
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -72,7 +95,7 @@
                 </li>
                 <li class="nav-item  header__cart-info">
                     <h3>$125.0</h3>
-                        <a href="#">checkout</a>
+                    <a href="#">checkout</a>
                 </li>
                 <li class="nav-item header__wish-list">
                     <p>Wish list </p> <sup>20</sup>
@@ -85,10 +108,14 @@
             </div>
         </div>
     </header>
-    
+
     <nav class="navbar">
+        <div class="menu-btn">
+            <span class="fas fa-chevron-left"></span>
+        </div>
         <div class="container">
-            <ul class="navbar__list">
+            
+            <ul class="navbar__list  menubar">
                 <li class="navbar__item"><a href="#">Computers</a> </li>
                 <li class="navbar__item"><a href="#">Cooking</a> </li>
                 <li class="navbar__item"><a href="#">Education</a> </li>
@@ -123,14 +150,14 @@
                 </div>
             </li>
             <li class="banner__item col-3">
-                    <h2 class="banner__item-title">Deal of the Month</h2>
-                    <p class="banner__item-subtitle">The Human Face of Big Data</p>
-                    <img src="images/banner/item.png" alt="">
-                    <h4 class="banner__item-discount">Save 45% Today</h4>
-                    <h2 class="banner__item-price">$27.50</h2>
-                    <div class="banner__item-button">
-                        <button> Buy now</button>
-                    </div>  
+                <h2 class="banner__item-title">Deal of the Month</h2>
+                <p class="banner__item-subtitle">The Human Face of Big Data</p>
+                <img src="images/banner/item.png" alt="">
+                <h4 class="banner__item-discount">Save 45% Today</h4>
+                <h2 class="banner__item-price">$27.50</h2>
+                <div class="banner__item-button">
+                    <button> Buy now</button>
+                </div>
             </li>
         </ul>
     </section>
@@ -176,15 +203,15 @@
             </div>
             <div class="categories__product col-lg-9">
                 <div class="categories__product-header">
-                    <ul>
-                        <li><a href="#">Best sellers</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Used Books</a></li>
-                        <li><a href="#">Special Offers</a></li>
+                    <ul class="tabs">
+                        <li class="tab-link active" id="seller">Best sellers</li>
+                        <li class="tab-link" id="news">New Arrivals</li>
+                        <li class="tab-link" id="users">Used Books</li>
+                        <li class="tab-link" id="special">Special Offers</li>
                     </ul>
                 </div>
-                <div class="categories__product-list ">
-                    <div class="categories__product-list-inner row">
+                <div class="categories__product-list">
+                    <div class="categories__product-list-inner row tab-content" id="seller">
                         <div class="categories__product-item col-sm-2 col-3-lg col-6-lg ">
                             <a href="product.html"><img src="images/category/prd1.jpg" alt=""></a>
                             <h4>The Hare With Amber Eyes</h4>
@@ -365,6 +392,24 @@
                             </div> -->
                         </div>
                     </div>
+
+                    <!-- Second Tabs Content -->
+                    <div class="categories__product-list-inner row tab-content" id="news">
+                        <div class="categories__product-item col-sm-2 col-3-lg col-6-lg ">
+                            <a href="product.html"><img src="images/category/prd1.jpg" alt=""></a>
+                            <h4>The Hare With Amber Eyes</h4>
+                            <h3>$50</h3>
+                            <div class="categories__product-item-sale">
+                                <div class="categories__product-item-sale-inner">
+                                    <p>30%</p>
+                                    <p>Off</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Second Tabs Content -->
+
+
                     <div class="categories__product-pagination">
                         <ul>
                             <li><a href="#">1</a></li>
@@ -457,12 +502,48 @@
         <h4> Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</h4>
     </section>
     <script>
-         $('.btn').click(function() {
+        $('.btn').click(function () {
             $(this).toggleClass("click");
             $('.sidebar').toggleClass("show");
         });
 
-        
+        $('.menu-btn').click(function () {
+            $(this).toggleClass("open");
+            $('.menubar').toggleClass("show-menu");
+        });
+
+
+        $('.tab-link').each(function () {
+            var element = $(this).attr('id')
+            if ($(this).hasClass("active")) {
+                $('.tab-content#' + element).addClass("show-content");
+            } else {
+                $('.tab-content#' + element).removeClass("show-content");
+            }
+
+        })
+        $('.tab-link').click(function () {
+            var ele = $(this).attr('id')
+            if (!$(this).hasClass("active")) {
+                $('.tab-link').removeClass('active');
+                $(this).addClass("active");
+                // $('.tab-content').removeAttr('id','show-content');
+                // $('.tab-content#'+ id).toggleClass('show-content');
+                $('.tab-link').each(function () {
+                    var element = $(this).attr('id')
+                    if ($(this).hasClass("active")) {
+                        $('.tab-content#' + element).addClass("show-content");
+                    } else {
+                        $('.tab-content#' + element).removeClass("show-content");
+                    }
+
+                })
+
+
+            }
+        });
+
+
         $('#exampleSlider').multislider();
 
         $('#exampleSlider').multislider({
@@ -480,7 +561,7 @@
             navMenu.classList.toggle("active");
         }
 
-       
+
     </script>
 </body>
 
