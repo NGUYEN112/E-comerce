@@ -1101,6 +1101,11 @@ a {
 .product__detail-cart-credit img {
   margin-right: 0.5rem;
 }
+@media (max-width: 768px) {
+  .product__detail-name {
+    text-align: center;
+  }
+}
 
 .more__inner {
   margin: 1.4rem;
@@ -1154,6 +1159,14 @@ a {
 }
 .more__contact-review-title:first-child {
   height: 4rem;
+}
+@media (max-width: 480px) {
+  .more__contact-review-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 .more__contact-review-comment {
   padding: 1rem 3rem;

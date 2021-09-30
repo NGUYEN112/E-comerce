@@ -1134,6 +1134,13 @@ a {
         }
         
     }
+
+   @media (max-width:768px) {
+    &__detail {
+        &-name {
+            text-align: center;
+        }}
+   }
 }
 
 .more {
@@ -1183,6 +1190,11 @@ a {
                 background-color: #fcfcfc;
                 &:first-child {
                     height: 4rem;
+                }
+            }
+            @media (max-width:480px) {
+                &-title {
+                    @include flex(center,center , );
                 }
             }
             &-comment {
