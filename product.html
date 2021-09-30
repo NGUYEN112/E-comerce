@@ -182,17 +182,21 @@
             <div class="more__inner row">
                 <div class="more__contact col-9">
                     <div class="more__contact-information">
-                        <ul class="more__contact-information-func">
-                            <li>Product information</li>
-                            <li>Other Details</li>
+                        <ul class="more__contact-information-func tabs">
+                            <li class="tab-link active" id="info">Product information</li>
+                            <li class="tab-link" id="other">Other Details</li>
                         </ul>
-                        <div class="more__contact-information-description">
+                        <div id="info" class="more__contact-information-description tab-content">
                             <p>The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and
                                 published on April 21, 1999 by Del Rey. It is based on the script of the movie of the
                                 same
                                 name. Narration for the abridged audio version was performed by Michael Cumpsty. The
                                 unabridged version was performed by Alexander Adams. On January 31, 2012, a new
                                 paperback edition was
+                            </p>
+                        </div>
+                        <div id="other" class="more__contact-information-description tab-content">
+                            <p>Other Detail
                             </p>
                         </div>
                     </div>
@@ -410,6 +414,66 @@
         $('.menu-btn').click(function () {
             $(this).toggleClass("open");
             $('.menubar').toggleClass("show-menu");
+        });
+
+        $('.tab-link').each(function () {
+            var element = $(this).attr('id')
+            if ($(this).hasClass("active")) {
+                $('.tab-content#' + element).addClass("show-content");
+            } else {
+                $('.tab-content#' + element).removeClass("show-content");
+            }
+
+        })
+        $('.tab-link').click(function () {
+            var ele = $(this).attr('id')
+            if (!$(this).hasClass("active")) {
+                $('.tab-link').removeClass('active');
+                $(this).addClass("active");
+                // $('.tab-content').removeAttr('id','show-content');
+                // $('.tab-content#'+ id).toggleClass('show-content');
+                $('.tab-link').each(function () {
+                    var element = $(this).attr('id')
+                    if ($(this).hasClass("active")) {
+                        $('.tab-content#' + element).addClass("show-content");
+                    } else {
+                        $('.tab-content#' + element).removeClass("show-content");
+                    }
+
+                })
+
+
+            }
+        });
+
+        $('.tab-link').each(function () {
+            var element = $(this).attr('id')
+            if ($(this).hasClass("active")) {
+                $('.tab-content#' + element).addClass("show-content");
+            } else {
+                $('.tab-content#' + element).removeClass("show-content");
+            }
+
+        })
+        $('.tab-link').click(function () {
+            var ele = $(this).attr('id')
+            if (!$(this).hasClass("active")) {
+                $('.tab-link').removeClass('active');
+                $(this).addClass("active");
+                // $('.tab-content').removeAttr('id','show-content');
+                // $('.tab-content#'+ id).toggleClass('show-content');
+                $('.tab-link').each(function () {
+                    var element = $(this).attr('id')
+                    if ($(this).hasClass("active")) {
+                        $('.tab-content#' + element).addClass("show-content");
+                    } else {
+                        $('.tab-content#' + element).removeClass("show-content");
+                    }
+
+                })
+
+
+            }
         });
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");

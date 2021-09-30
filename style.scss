@@ -1566,6 +1566,18 @@ a {
         //     }
         }
     }
+
+    @media (max-width:480px) {
+        &__contact {
+            &-information {
+                &-func {
+                    & li {
+                        @include text(1.3rem);
+                    }
+                }
+            }
+        }
+    }
 }
 
 

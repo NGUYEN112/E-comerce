@@ -1509,5 +1509,12 @@ a {
     line-height: 2.444;
   }
 }
+@media (max-width: 480px) {
+  .more__contact-information-func li {
+    font-size: 1.3rem;
+    color: #6d6d6d;
+    font-weight: 400;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
