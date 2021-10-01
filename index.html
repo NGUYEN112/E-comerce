@@ -37,12 +37,12 @@
             <div class="header__logo">
                 <img src="images/header/logo.png" alt="">
             </div>
-            <ul class="header-navbar">
+            <ul class="header-navbar nav-cart">
                 <li class="header__search">
                     <input type="text" placeholder="Search...">
                     <button><i class="far fa-search"></i> Search</button>
                 </li>
-                <li class="header__cart-inner">
+                <li class="header__cart-inner nav-cart-item">
                     <div class=" header__cart">
                         <div class="header__cart-title">
                             <i class="fas fa-shopping-cart fa-3x"></i>
@@ -59,48 +59,17 @@
                         <p>Wish list </p> <sup>20</sup>
                     </div>
                 </li>
-                <!-- <li class=" header__wish-list">
-                    <img src="images/header/wish-list.png" alt="">
-                    <p>Wish list </p> <sup>20</sup>
-                </li> -->
-                <li class="navbar-mobie">
-                    <ul class="nav-mobie">
-                        <li class="cart">
-                            <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
-                        </li>
-                        <li class="wish">
-                            <p>Wish list </p> <sup>20</sup>
-                        </li>
-                    </ul>
-                </li>
             </ul>
-            <!-- <ul class="nav-mobie">
-                <li class="cart">
-                    <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
-                </li>
-                <li class="wish-list">
-                    <p>Wish list </p> <sup>20</sup>
-                </li>
-            </ul> -->
-
-            <!-- bars -->
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <div class="search-container">
-                        <input type="text" name="search" placeholder="Search..." class="search-input">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item  header__cart-info">
-                    <h3>$125.0</h3>
-                    <a href="#">checkout</a>
-                </li>
-                <li class="nav-item header__wish-list">
-                    <p>Wish list </p> <sup>20</sup>
-                </li>
-            </ul>
+            <div class="navbar-mobie">
+                <ul class="nav-mobie">
+                    <li class="cart">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </li>
+                    <li class="wish">
+                        <p>Wish list </p> <sup>20</sup>
+                    </li>
+                </ul>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -109,22 +78,20 @@
         </div>
     </header>
 
+
     <nav class="navbar">
-        <div class="menu-btn">
-            <span class="fas fa-chevron-left"></span>
-        </div>
         <div class="container">
-            
-            <ul class="navbar__list  menubar">
-                <li class="navbar__item"><a href="#">Computers</a> </li>
-                <li class="navbar__item"><a href="#">Cooking</a> </li>
-                <li class="navbar__item"><a href="#">Education</a> </li>
-                <li class="navbar__item"><a href="#">Fiction</a></li>
-                <li class="navbar__item"><a href="#">Health</a></li>
-                <li class="navbar__item"><a href="#">Mathematics</a> </li>
-                <li class="navbar__item"><a href="#"> Medical</a></li>
-                <li class="navbar__item"><a href="#">Reference</a> </li>
-                <li class="navbar__item"><a href="#"> Science</a></li>
+
+            <ul class="navbar__list nav-menu">
+                <li class="nav-item navbar__item "><a href="#">Computers</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Cooking</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Education</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Fiction</a></li>
+                <li class="navbar__item nav-item"><a href="#">Health</a></li>
+                <li class="navbar__item nav-item"><a href="#">Mathematics</a> </li>
+                <li class="navbar__item nav-item"><a href="#"> Medical</a></li>
+                <li class="navbar__item nav-item"><a href="#">Reference</a> </li>
+                <li class="navbar__item nav-item"><a href="#"> Science</a></li>
             </ul>
         </div>
     </nav>
@@ -560,6 +527,11 @@
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
         }
+
+        $('.cart').click(function() {
+            $(this).toggleClass("swich");
+            $('.nav-cart').toggleClass("swich");
+        })
 
 
     </script>

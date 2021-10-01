@@ -31,14 +31,14 @@
     <header class="header">
         <div class="container header__inner">
             <div class="header__logo">
-                <img src="images/header/logo.png" alt="">
+                <a href="index.html"><img src="images/header/logo.png" alt=""></a>
             </div>
-            <ul class="header-navbar">
+            <ul class="header-navbar nav-cart">
                 <li class="header__search">
                     <input type="text" placeholder="Search...">
                     <button><i class="far fa-search"></i> Search</button>
                 </li>
-                <li class="header__cart-inner">
+                <li class="header__cart-inner nav-cart-item">
                     <div class=" header__cart">
                         <div class="header__cart-title">
                             <i class="fas fa-shopping-cart fa-3x"></i>
@@ -55,48 +55,17 @@
                         <p>Wish list </p> <sup>20</sup>
                     </div>
                 </li>
-                <!-- <li class=" header__wish-list">
-                    <img src="images/header/wish-list.png" alt="">
-                    <p>Wish list </p> <sup>20</sup>
-                </li> -->
-                <li class="navbar-mobie">
-                    <ul class="nav-mobie">
-                        <li class="cart">
-                            <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
-                        </li>
-                        <li class="wish">
-                            <p>Wish list </p> <sup>20</sup>
-                        </li>
-                    </ul>
-                </li>
             </ul>
-            <!-- <ul class="nav-mobie">
-                <li class="cart">
-                    <a href=""><i class="fas fa-shopping-cart fa-2x"></i></a>
-                </li>
-                <li class="wish-list">
-                    <p>Wish list </p> <sup>20</sup>
-                </li>
-            </ul> -->
-
-            <!-- bars -->
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <div class="search-container">
-                        <input type="text" name="search" placeholder="Search..." class="search-input">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item  header__cart-info">
-                    <h3>$125.0</h3>
-                    <a href="#">checkout</a>
-                </li>
-                <li class="nav-item header__wish-list">
-                    <p>Wish list </p> <sup>20</sup>
-                </li>
-            </ul>
+            <div class="navbar-mobie">
+                <ul class="nav-mobie">
+                    <li class="cart">
+                        <i class="fas fa-shopping-cart fa-2x"></i>
+                    </li>
+                    <li class="wish">
+                        <p>Wish list </p> <sup>20</sup>
+                    </li>
+                </ul>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -107,21 +76,18 @@
 
 
     <nav class="navbar">
-        <div class="menu-btn">
-            <span class="fas fa-chevron-left"></span>
-        </div>
         <div class="container">
-            
-            <ul class="navbar__list  menubar">
-                <li class="navbar__item"><a href="#">Computers</a> </li>
-                <li class="navbar__item"><a href="#">Cooking</a> </li>
-                <li class="navbar__item"><a href="#">Education</a> </li>
-                <li class="navbar__item"><a href="#">Fiction</a></li>
-                <li class="navbar__item"><a href="#">Health</a></li>
-                <li class="navbar__item"><a href="#">Mathematics</a> </li>
-                <li class="navbar__item"><a href="#"> Medical</a></li>
-                <li class="navbar__item"><a href="#">Reference</a> </li>
-                <li class="navbar__item"><a href="#"> Science</a></li>
+
+            <ul class="navbar__list nav-menu">
+                <li class="nav-item navbar__item "><a href="#">Computers</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Cooking</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Education</a> </li>
+                <li class="navbar__item nav-item"><a href="#">Fiction</a></li>
+                <li class="navbar__item nav-item"><a href="#">Health</a></li>
+                <li class="navbar__item nav-item"><a href="#">Mathematics</a> </li>
+                <li class="navbar__item nav-item"><a href="#"> Medical</a></li>
+                <li class="navbar__item nav-item"><a href="#">Reference</a> </li>
+                <li class="navbar__item nav-item"><a href="#"> Science</a></li>
             </ul>
         </div>
     </nav>
@@ -154,14 +120,16 @@
                             was released with a new short story, End Game, by James Luceno featured inside.
                         </p>
                         <div class="product__detail-cart">
-                            <div class="product__detail-cart-paying">
-                                <div class="product__detail-cart-price">
+                            <div class="product__detail-cart-paying row">
+                                <div class="product__detail-cart-price col-6">
                                     <h2>Our price : <span>$150</span></h2>
                                     <h4>Was $200 Save 10%</h4>
                                 </div>
-                                <button class="product__detail-cart-add">
-                                    Add to cart
-                                </button>
+                                <div class="product__detail-cart-button col-6">
+                                    <button class="product__detail-cart-add">
+                                        Add to cart
+                                    </button>
+                                </div>
                             </div>
                             <div class="product__detail-cart-line"></div>
                             <p><i class="fas fa-lock"></i> Safe, Secure Shoping</p>
@@ -243,90 +211,94 @@
                             </div>
                             <div class="more__contact-review-create-item ">
                                 <label class="" for="email">Email</label>
-                                <input placeholder="Email..."  type="text" id="email">
+                                <input placeholder="Email..." type="text" id="email">
                             </div>
                             <div class="more__contact-review-create-item ">
                                 <label class="" for="message">Message</label>
-                                <textarea placeholder="Message..."  name="" id="message" cols="30" rows="10"></textarea>
+                                <textarea placeholder="Message..." name="" id="message" cols="30" rows="10"></textarea>
                             </div>
                             <button>Submit</button>
                         </div>
                     </div>
                 </div>
-                <div class="more__product col-lg-3">
+                <div class="more__product col-lg-3 " id="exampleSliderProduct">
                     <h2 class="more__product-title">
                         You may also like
                     </h2>
-                    <ul class="more__product-list">
-                        <li class="more__product-item">
+                    <div class="MS-controls">
+                        <button class="MS-left"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></button>
+                        <button class="MS-right"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                    <ul class="more__product-list MS-content">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
 
-                        <li class="more__product-item">
+                        <li class="more__product-item item">
                             <a href="#"><img src="images/category/prd1.jpg" alt=""></a>
                             <div class="more__product-item-info">
                                 <h3>The Hare With Amber</h3>
                                 <h2>$50</h2>
-                                 <a href="#">Read more</a>
+                                <a href="#">Read more</a>
                             </div>
                         </li>
                     </ul>
@@ -475,6 +447,39 @@
 
             }
         });
+        var width = $(window).width();
+        console.log(width);
+        $(window).resize(function () {
+            var width = $(window).width();
+            if (width < 768) {
+                $('#exampleSliderProduct').multislider();
+
+                $('#exampleSliderProduct').multislider({
+                    interval: 5000,
+                    // slideAll: true
+                });
+            }
+        });
+
+        // var slideIndex = 1;
+        // showDivs(slideIndex);
+
+        // function plusDivs(n) {
+        //     showDivs(slideIndex += n);
+        // }
+
+        // function showDivs(n) {
+        //     var i;
+        //     var x = document.getElementsByClassName("mySlides");
+        //     if (n > x.length) { slideIndex = 1 }
+        //     if (n < 1) { slideIndex = x.length }
+        //     for (i = 0; i < x.length; i++) {
+        //         x[i].style.display = "none";
+        //     }
+        //     x[slideIndex - 1].style.display = "block";
+        // }
+
+
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
 
@@ -484,6 +489,14 @@
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
         }
+
+       
+
+        $('.cart').click(function() {
+            $(this).toggleClass("swich");
+            $('.nav-cart').toggleClass("swich");
+        })
     </script>
-    </body>
+</body>
+
 </html>
